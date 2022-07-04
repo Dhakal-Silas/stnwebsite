@@ -11,11 +11,12 @@ import dimg2 from '../Images/dimg2.jpg'
 import ngclientimg1 from '../Images/ngclientimg1.jpg'
 
 
+
 function Home() {
  
 
   return (
-    <>
+<>
 
     <div className='page'>
         <div className='navbar'>
@@ -118,12 +119,14 @@ function Home() {
             <i class="fa-solid fa-circle-check"></i>Web Based Support and Solution
             <i class="fa-solid fa-circle-check"></i>Data Conversion and Data Entry
             
+            
             </div>
-            </div>
+        </div>
         </div>
         <div className='expert-pic'>
             <img src={dimg1} alt='expertise Image'/>
         </div>
+        
 
         <div className='techno-desc'>
             <h3>Technology We Embrace</h3>
@@ -149,12 +152,14 @@ function Home() {
                    
                     </div>
             </div>
-        </div>
+            </div>
+            
         <div className='techno-pic'>
             <img src={dimg2} alt='Techonlogy Image'/>
         </div>
         </div>
-        </div>
+        
+       
         {/* Nepal Government Clients */}
         <div className='ngclients'>
             <div className='clients-list'>
@@ -176,15 +181,36 @@ function Home() {
             <div className='rotate-img'>
             <img src={ngclientimg1} alt='BackgroundImage' />
             
+            </div>
+            </div>
+    
+        {/* try section */}
+    <div className='try'>
+        <div className='box'>
+        <i class="fa-solid fa-handshake"></i>
+             <p>Lets give us a try</p>
+        </div>
+
+        
+    </div>
+    {/* testimony section */}
+    <div className='testimonial'>
+        <div className='testimony-header'>
+            <h3>Check out what are clients are saying about us:</h3>    
+            <div className='testimony-card'>
+                    
+            </div>
+            <p>Thanks to Our admirable team of developers, field managers, and marketing department who  gave 100% to bring this outcome.</p>
+            
+        </div>
+
     </div>
 
 
 
 
-
-
-    </div>
-
+</div>
+ 
    
     </>
   )
