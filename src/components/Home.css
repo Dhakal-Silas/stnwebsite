@@ -1,0 +1,359 @@
+:root{
+    --black:#000;
+    --white:#fff;
+    --blue:rgb(81, 81, 253); 
+    --red:#f9032f;
+}
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    
+}
+
+.navbar{
+    
+    background: var(--black);
+    padding: 0.5rem calc(( 100vw - 1200px) / 2);
+    display:flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    border-bottom: solid 1px var(--white);
+    z-index: 100;
+    
+}
+.logo{
+    height:100px;
+    width:250px;
+}
+.navbar img{
+    height:100%;
+    width:100%;
+
+}
+.navbar-menu {
+    
+    text-transform: uppercase;
+    font-weight: bold;
+ 
+}
+a {
+    text-decoration: none;
+    padding: 1rem 1rem;
+    font-size: 0.8rem;
+    transition: all 0.3s ease-in-out ;
+ 
+    }
+a:nth-child(1){
+    background:var(--blue);
+    color:var(--white);
+    
+}
+.navbar-items{
+    margin-left: 1px;
+    color:var(--blue)
+    
+}
+.navbar-items:hover{
+    color: var(--white);
+    background:var(--blue);
+        
+}
+.parallax1{
+    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.1)),url(../Images/homepic1.jpg);
+    min-height: 100vh;
+    width:100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.hero{
+    color: var(--white);
+   
+    padding:0.5rem calc((100vw - 1200px) / 2);
+    display: flex;
+    justify-content: flex-start;
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.1)),url(../Images/homepic2.jpg);
+    object-fit: cover;
+   align-items: center; 
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   transition: all 0.3s ease-in-out;
+}
+.hero-contents{
+    
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    width: 40%;
+     
+
+}
+.hero-contents h1{
+   font-size: clamp(1rem,5vw,3rem);
+}
+
+.btn{
+    height:50px;
+    width:200px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+   color:var(--white); 
+    border:none;
+    background:var(--blue);
+    margin-top:1rem;
+    border-radius: 8px;
+}
+
+.btn:hover{
+    background: var(--red);
+    color: var(--white);
+
+}
+i{
+    font-size: 20px;
+    margin-left: 10px;
+}
+@media screen and (max-width:768px)
+{
+    .navbar-items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-toggle .bar{
+        width:25px;
+        height:3px;
+        margin:5px auto;
+        background: var(--white);
+        transition: all 0.3s ease-in-out;
+        display: block;
+        cursor:pointer;
+
+    }
+    #mobile-menu{
+        position:absolute;
+        top:15%;
+        right:5%;
+        transform: translate(5%,20%);
+    }
+
+    .navbar-menu{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(4,100px);
+        position:absolute;
+        display:none;
+    }
+}
+
+/* Features section */
+.features{
+   display: flex;
+   justify-content: space-between;
+    padding: 1rem calc(( 100vw - 1200px ) / 2 );
+    background:var(--black);
+    width:100vw;
+    height:500px;
+    color:var(--white);
+    align-items:center;
+
+}
+.rect{
+    
+    height: 80%;
+    width: 250px; 
+    border: 2px solid grey;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    text-align: center;
+    align-items: flex-start;
+}
+.rect h3{
+line-height: 2rem;
+color: var(--red);
+margin-top: 1rem;
+text-align: center;
+}
+.rect img{
+    height:150px;
+    width: 100%;
+    border-radius: 8px;
+    
+}
+
+
+.rect:hover{
+    border:none;
+    background:var(--blue);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out ;
+    transform:translateY(-20px);
+    overflow: hidden;
+
+}
+.video-wrapper{
+    height: 100vh;
+    width:100vw;
+    background: rgb(201, 199, 199);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem calc((100vw-1200px)/2);
+}
+
+
+/* video section */
+
+.video{
+    height: 80vh;
+    width:80vw;
+    position: absolute;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   }
+video{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.desc-wrapper{
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0.5rem calc(( 100vw - 1200px)/2);
+    background: rgb(226, 223, 223);
+    width: 100vw;
+    line-height: 1.5rem;
+    
+}
+.expert-desc{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    
+    
+}
+.desc-list{
+    color:var(--red);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 25px 25px 25px 25px repeat(11,25px);
+    flex-direction: column;
+    
+}
+.desc-list i{
+     color:var(--blue);
+     margin-right:5px;
+ 
+}
+.expert-desc h3 {
+    text-align: center;
+}
+.expert-desc p {
+    text-align: center;
+}
+.techno-desc{
+    width: 100%;
+    height:100%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin-left: 20px;
+    
+
+    
+}
+.techno-desc h3 {
+    text-align: center;
+}
+.techno-desc p {
+    text-align: center;
+}
+
+.desc-list1{
+    color:var(--red);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:  repeat(8,25px) 45px repeat(4, 25px);
+    flex-direction: column;
+}
+.desc-list1 i{
+    color:var(--blue);
+    margin-right:5px;
+ 
+}
+.parallax2{
+    background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.1)),url(../Images/homebg2.jpg);
+    height: 100vh;
+    width:100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.5;
+}
+.expert-desc{
+    grid-row: 1/5;
+    grid-column: 1/4;
+}
+
+.techno-desc{
+    grid-row: 4/8;
+    grid-column: 5/8;
+}
+.expert-pic{
+    height: 100%;
+    width: 100%;
+    grid-row: 1/3;
+    grid-column: 5/8;
+    padding: 1rem calc((100vw - 1200px)/2);
+}
+.techno-pic{
+    height: 100%;
+    width: 100%;
+    grid-row: 6/8;
+    grid-column: 1/4;
+    padding: 1rem calc((100vw - 1200px)/2);
+}
+.expert-pic img{
+    height:100%;
+    width: 100%;
+    border-radius: 10px;
+ 
+}
+.techno-pic img{
+    height:100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/* nepali government client section */
+.ngclients{
+    display: flex;
+    padding:3rem calc((100vw - 1200px)/2);
+    justify-content: space-between;
+    background: var(--black);
+    color: var(--white);
+    
+}
+.clients-list{
+    line-height: 1.5rem;
+}
+.clients-list h3{
+    color: var(--red);
+    
+}
+.rotate-img img{
+    border-radius: 190px;
+}
