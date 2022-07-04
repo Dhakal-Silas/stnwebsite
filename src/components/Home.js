@@ -9,6 +9,9 @@ import vid from '../Images/stnvideo.mp4'
 import dimg1 from '../Images/dimg1.jpg'
 import dimg2 from '../Images/dimg2.jpg'
 import ngclientimg1 from '../Images/ngclientimg1.jpg'
+import mayorpic from '../Images/mayorpic.jpg'
+import { MdChevronLeft,MdChevronRight } from 'react-icons/md';
+
 
 
 
@@ -194,19 +197,76 @@ function Home() {
         
     </div>
     {/* testimony section */}
-    <div className='testimonial'>
-        <div className='testimony-header'>
+    < MdChevronLeft size={40} className='left'/>   < MdChevronRight size={40} className='right'/>
+        <div className='testimonial'>
+      <div className='testimony-header'>
             <h3>Check out what are clients are saying about us:</h3>    
-            <div className='testimony-card'>
-                    
+            <div className='testimony-card-wrapper'>
+            <div className='testimony-card' >
+          
+                   <div className='testimony-img'>
+                    <img src={mayorpic} alt='Picture of Mayor'></img></div> 
+                    <div className='testimony-content'>
+                    <h4>Ganesh Parsain</h4> <h5>Mayor (Harion Municipality)</h5>
+                    “You think about things in such a creative way. You help me think about problem-solving in a new way."
+                    </div>
             </div>
-            <p>Thanks to Our admirable team of developers, field managers, and marketing department who  gave 100% to bring this outcome.</p>
+            <div className='testimony-card' >
+                   <div className='testimony-img'>
+                    <img src={mayorpic} alt='Picture of Mayor'></img></div> 
+                    <div className='testimony-content'>
+                    <h4>Ganesh Parsain</h4> <h5>Mayor (Harion Municipality)</h5>
+                    “You think about things in such a creative way. You help me think about problem-solving in a new way."
+                    </div>
+            </div>
+            <div className='testimony-card' >
+                   <div className='testimony-img'>
+                    <img src={mayorpic} alt='Picture of Mayor'></img></div> 
+                    <div className='testimony-content'>
+                    <h4>Ganesh Parsain</h4> <h5>Mayor (Harion Municipality)</h5>
+                    “You think about things in such a creative way. You help me think about problem-solving in a new way."
+                    </div>
+            </div>
+            <div className='testimony-card'>
+                   <div className='testimony-img'>
+                    <img src={mayorpic} alt='Picture of Mayor'></img></div> 
+                    <div className='testimony-content'>
+                    <h4>Ganesh Parsain</h4> <h5>Mayor (Harion Municipality)</h5>
+                    “You think about things in such a creative way. You help me think about problem-solving in a new way."
+                     </div>
+            </div>
+            
+            <div className='testimony-card'>
+                   <div className='testimony-img'>
+                    <img src={mayorpic} alt='Picture of Mayor'></img></div> 
+                    <div className='testimony-content'>
+                    <h4>Ganesh Parsain</h4> <h5>Mayor (Harion Municipality)</h5>
+                    “You think about things in such a creative way. You help me think about problem-solving in a new way."
+                    </div>
+            </div>
+            <div className='testimony-card' >
+                   <div className='testimony-img'>
+                    <img src={mayorpic} alt='Picture of Mayor'></img></div> 
+                    <div className='testimony-content'>
+                    <h4>Ganesh Parsain</h4> <h5>Mayor (Harion Municipality)</h5>
+                    “You think about things in such a creative way. You help me think about problem-solving in a new way."
+                    </div>
+            </div>
+            
+            
+
+            </div>
+            
+            
+            
             
         </div>
+        
+    <p>Thanks to Our admirable team of developers, field managers, and marketing department who  gave 100% to bring this outcome.</p>
 
     </div>
 
-
+    
 
 
 </div>
