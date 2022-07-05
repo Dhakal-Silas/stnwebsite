@@ -10,6 +10,7 @@ import dimg1 from '../Images/dimg1.jpg'
 import dimg2 from '../Images/dimg2.jpg'
 import ngclientimg1 from '../Images/ngclientimg1.jpg'
 import mayorpic from '../Images/mayorpic.jpg'
+
 import { MdChevronLeft,MdChevronRight } from 'react-icons/md';
 
 
@@ -197,7 +198,7 @@ function Home() {
         
     </div>
     {/* testimony section */}
-    < MdChevronLeft size={40} className='left'/>   < MdChevronRight size={40} className='right'/>
+    {/* < MdChevronLeft size={40} className='left'/>   < MdChevronRight size={40} className='right'/> */}
         <div className='testimonial'>
       <div className='testimony-header'>
             <h3>Check out what are clients are saying about us:</h3>    
@@ -265,9 +266,19 @@ function Home() {
     <p>Thanks to Our admirable team of developers, field managers, and marketing department who  gave 100% to bring this outcome.</p>
 
     </div>
-
+{/* Case Studies Section */}
+<div className='case'>
+    <div className='case-header'>
+        <h2>We focus on bringing value and solve business main challenges</h2>
+    </div>
+    <div className='case-content'>
+        <p>Our working ideology is the dedication to provide top quality solutions by utilizing
+information technology as strategic business tool, both domestically and internationally.</p>
+    </div>
+    </div>    
+<div className='footer'>
     
-
+</div>
 
 </div>
  
